@@ -1,0 +1,42 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<h2>Here is where we lead from: </h2>
+
+<ul>
+  <li>
+    <h2><a target="_blank" rel="noopener"
+           href="https://medium.freecodecamp.org/learn-how-to-create-your-first-angular-app-in-20-min-146201d9b5a7l">Learning
+      from tutorial</a></h2>
+  </li>
+
+</ul>
+
+<div class="container">
+  <form>
+    <div class="form-group">
+      <h1 class="text-center text-primary">Add new ToDo in list</h1>
+      <div class="input-group-prepend">
+        <!--<input type="text" class="form-control" placeholder="Add Todo" name="todo">-->
+        <input type="text" #todo class="form-control" placeholder="Add Todo" name="todo" ngModel>
+        <!-- <input #myVariable type="text" name="text" ngModel>-->
+        <p>{{myVariable.value}}</p>
+        <!-- <p>{{todo.value}}</p>-->
+        <span class="input-group-text" (click)="addTodo(todo.value)">
+          <i class="material-icons">add</i>
+        </span>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="data">
+  <ul class="list-instyled">
+    <li *ngFor="let todo of todoArray">{{todo}} <i (click)="deleteItem(todo)" class="material-icons">delete</i></li>
+  </ul>
+</div>
+
+
