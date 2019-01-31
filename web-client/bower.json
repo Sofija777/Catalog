@@ -1,0 +1,17 @@
+{
+  "name": "web-client",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Sofija Petroska <sofija_777@hotmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Sofija777/Catalog",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
